@@ -122,7 +122,7 @@ class ListModuleController extends ActionController
         }
         $pageRenderer = $view->getModuleTemplate()->getPageRenderer();
         $pageRenderer->addCssFile(
-                ExtensionManagementUtility::extRelPath('devlog') . 'Resources/Public/StyleSheet/Devlog.css'
+                ExtensionManagementUtility->siteRelPath('devlog') . 'Resources/Public/StyleSheet/Devlog.css'
         );
         $pageRenderer->loadRequireJsModule('TYPO3/CMS/Devlog/ListModule');
         $pageRenderer->addInlineSettingArray(
