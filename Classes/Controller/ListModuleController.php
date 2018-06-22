@@ -136,7 +136,7 @@ class ListModuleController extends ActionController
         $newWindowButton = GeneralUtility::makeInstance(ExtendedLinkButton::class);
         $newWindowButton->setIcon($newWindowIcon)
                 ->setTarget('_blank')
-                ->setTitle(LocalizationUtility::translate('LLL:EXT:lang/locallang_core.xlf:labels.openInNewWindow', 'lang'))
+                ->setTitle(LocalizationUtility::translate('LLL:EXT:lang/Resources/Private/Language/locallang_core.xlf:labels.openInNewWindow', 'lang'))
                 ->setHref(
                         $this->uriBuilder->uriFor('index')
                 );
